@@ -7,7 +7,7 @@ const Loader = () => {
       <div className="loader">
         <Spinner size={50} />
       </div>
-      <div className="flex">
+      <div className="flex justify-center">
         <span className="text-center">
           Current Heroku hosting may take a few minutes to spin up.
         </span>
