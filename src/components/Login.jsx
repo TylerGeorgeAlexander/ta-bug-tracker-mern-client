@@ -125,7 +125,7 @@ const Login = () => {
             id="emailLogin"
             placeholder="Email"
             type="email"
-            value="admin@admin.com"
+            value="test@test.com"
             onChange={(e) => setEmail(e.target.value)}
           />
         </FormGroup>
