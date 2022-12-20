@@ -50,7 +50,11 @@ function App() {
   const syncLogout = useCallback((event) => {
     if (event.key === "logout") {
       // If using react-router-dom, you may call history.push("/")
-      window.location.reload();
+      // window.location.reload();
+      fetch('/logout', {
+        method: 'GET',
+        credentials: 'include'
+      });
     }
   }, []);
 
