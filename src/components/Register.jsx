@@ -1,6 +1,7 @@
 import { Button, Callout, FormGroup, InputGroup } from "@blueprintjs/core";
 import React, { useContext, useState } from "react";
 import { UserContext } from "../context/UserContext";
+import Logo from "../assets/logos/IssueTracker-logos_black.png";
 
 const Register = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -23,7 +24,12 @@ const Register = () => {
       method: "POST",
       credentials: "include",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ firstName, lastName, username: email.toLowerCase(), password }),
+      body: JSON.stringify({
+        firstName,
+        lastName,
+        username: email.toLowerCase(),
+        password,
+      }),
     })
       .then(async (response) => {
         setIsSubmitting(false);
@@ -54,6 +60,9 @@ const Register = () => {
 
   return (
     <>
+      <div className="header">
+        <img src={Logo} alt="Issue Tracker Logo" />
+      </div>
       {error && <Callout intent="danger">{error}</Callout>}
 
       <form onSubmit={formSubmitHandler} className="auth-form">
