@@ -1,7 +1,7 @@
 import { Button, Callout, FormGroup, InputGroup } from "@blueprintjs/core";
 import React, { useContext, useState } from "react";
 import { UserContext } from "../context/UserContext";
-import Logo from "../assets/logos/IssueTracker-logos_black.png";
+import Logo from "../assets/logos/bugTracker-logos_black.png";
 
 const Register = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -60,8 +60,8 @@ const Register = () => {
 
   return (
     <>
-      <div className="header">
-        <img src={Logo} alt="Issue Tracker Logo" />
+      <div className="header flex items-center justify-center">
+        <img src={Logo} className="w-64 h-64 mr-2" alt="Issue Tracker Logo" />
       </div>
       {error && <Callout intent="danger">{error}</Callout>}
 
