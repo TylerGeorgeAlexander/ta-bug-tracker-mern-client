@@ -1,7 +1,7 @@
 
-            Fonts used: Lato-Bold 
+            Fonts used: Lato-Regular,Bellfort 
 
-            Colors used: 495FA6,F6AE84  
+            Colors used: F7BF4F,271801  
 
-            Icon url: https://thenounproject.com/term/bug/177033  
+            Icon url: https://thenounproject.com/term/insects/5178564  
         
